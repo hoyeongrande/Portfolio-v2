@@ -1,0 +1,23 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100%;
+  place-items: center;
+  justify-content: space-around;
+}
+
+.main .title {
+  margin-left: 200px;
+  font-size: 13vh;
+}
+
+.main .title .paragraph {
+  font-size: 3vh;
+}
+
+.main .image {
+  height: 95vh;
+  width: 95vh;
+  background-image: url("../image/profile.jpg");
+  background-size: cover;
+}

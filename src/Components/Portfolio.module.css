@@ -1,0 +1,122 @@
+.list {
+}
+
+.title {
+  padding: 0px 50px;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.wrapper {
+  padding: 10px 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(300px, auto);
+}
+
+.box {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  position: relative;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  bottom: 0px;
+
+  overflow: hidden;
+}
+
+.box:hover .image {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.box:hover .paragraph {
+  opacity: 1;
+}
+
+.paragraph {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  bottom: 0px;
+}
+
+.box:nth-child(1) {
+  grid-area: span 1 / span 2;
+  background-image: url("../image/portfolio1.JPG");
+}
+
+.box:nth-child(2) {
+  grid-area: span 1 / span 1;
+  background-image: url("../image/portfolio3.JPG");
+}
+
+.box:nth-child(2) .paragraph {
+  bottom: 50px;
+}
+
+.box:nth-child(3) {
+  grid-area: span 2 / span 1;
+  background-image: url("../image/portfolio4.JPG");
+}
+
+.box:nth-child(4) {
+  grid-area: span 2 / span 2;
+  background-image: url("../image/portfolio2.JPG");
+}
+
+.box:nth-child(5) {
+  grid-area: span 1 / span 1;
+  background-image: url("../image/portfolio5.JPG");
+}
+
+.box:nth-child(6) {
+  grid-area: span 1 / span 1;
+  background-image: url("../image/portfolio6.JPG");
+}
+
+.box:nth-child(7) {
+  grid-area: span 2 / span 1;
+  background-image: url("../image/portfolio7.JPG");
+}
+
+.box:nth-child(8) {
+  grid-area: span 1 / span 2;
+  background-image: url("../image/portfolio8.JPG");
+}
+
+.box:nth-child(9) {
+  grid-area: span 2 / span 2;
+  background-image: url("../image/portfolio9.JPG");
+}
+
+.box:nth-child(10) {
+  grid-area: span 1 / span 1;
+  background-image: url("../image/portfolio10.JPG");
+}
+
+.box:nth-child(11) {
+  grid-area: span 1 / span 1;
+  background-image: url("../image/portfolio11.JPG");
+}
+
+.box:nth-child(12) {
+  grid-area: span 1 / span 1;
+  background-image: url("../image/portfolio12.JPG");
+}
