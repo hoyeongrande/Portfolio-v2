@@ -16,14 +16,21 @@ export default () => (
     <>
       <Header />
       <Switch>
-        <Route path="https://hoyeongrande.github.io" exact component={Home} />
-        <Route path="https://hoyeongrande.github.io/about" component={About} />
         <Route
-          path="https://hoyeongrande.github.io/portfolio"
+          path="https://hoyeongrande.github.io/portfolio-v2"
+          exact
+          component={Home}
+        />
+        <Route
+          path="https://hoyeongrande.github.io/portfolio-v2/about"
+          component={About}
+        />
+        <Route
+          path="https://hoyeongrande.github.io/portfolio-v2/portfolio"
           component={Portfolio}
         />
         <Route
-          path="https://hoyeongrande.github.io/contact"
+          path="https://hoyeongrande.github.io/portfolio-v2/contact"
           component={Contact}
         />
         <Redirect from="*" to="/" />
