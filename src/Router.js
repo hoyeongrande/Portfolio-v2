@@ -13,15 +13,13 @@ import Contact from "./Components/Contact";
 
 export default () => (
   <Router>
-    <>
-      <Header />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/portfolio" component={Portfolio} />
-        <Route path="/contact" component={Contact} />
-        <Redirect from="*" to="/" />
-      </Switch>
-    </>
+    <Header />
+    <Switch>
+      <Route path="/" exact component={Home} />
+      <Route path="/about" exact component={About} />
+      <Route path="/portfolio" component={Portfolio} />
+      <Route path="/contact" component={Contact} />
+      <Redirect from="*" to="/" />
+    </Switch>
   </Router>
 );
