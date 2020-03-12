@@ -22,7 +22,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": "https://hoyeongrande.github.io/portfolio-v2",
+  "homepage": "https://reverent-brown-8fbafb.netlify.com",
   "browserslist": {
     "production": [
       ">0.2%",
